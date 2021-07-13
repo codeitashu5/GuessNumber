@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:id="@+id/question_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_sixteen"
+        android:textColor="@color/colorBlue"
+        android:textSize="@dimen/text_size_32"
+        android:visibility="visible"
+        tools:text="IS THIS YOUR NO?" />
+
+    <TextView
+        android:id="@+id/answer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/color_blue"
+        android:textSize="@dimen/text_size_32"
+        android:visibility="invisible"
+        tools:text="NUMBER IS 5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_reset"
+        android:layout_marginBottom="@dimen/margin_eight"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="@dimen/margin_eight"
+            android:layout_marginLeft="@dimen/margin_eight"
+            android:background="@drawable/background_circle_blue"
+            android:contentDescription="@string/button_down_content_descripton"
+            android:onClick="downWardIsClicked"
+            app:srcCompat="@drawable/ic_arrow_downward" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bakground_circle_pink"
+            android:contentDescription="@string/image_check_content_discription"
+            android:onClick="checkIsClicked"
+            app:srcCompat="@drawable/ic_baseline_check_24" />
+
+        <ImageView
+            android:id="@+id/up_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/margin_eight"
+            android:layout_marginRight="@dimen/margin_eight"
+            android:background="@drawable/background_circle_blue"
+            android:onClick="upWardIsClicked"
+            android:contentDescription="@string/arrow_up_content_discription"
+            app:srcCompat="@drawable/ic_arrow_upward" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_eight"
+        android:contentDescription="@string/reset_button_discription"
+        android:text="@string/button_text"
+        android:textColor="@color/white"
+        android:onClick="resetIsClicked"
+        android:textSize="@dimen/text_size_24" />
+
+</RelativeLayout>

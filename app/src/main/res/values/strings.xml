@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GussNumberApp</string>
+    <string name="question_text">Is your number is 5?</string>
+    <string name="button_text">reset</string>
+    <string name="button_down_content_descripton">Image to move your number down</string>
+    <string name="image_check_content_discription">Click here if this is your no</string>
+    <string name="arrow_up_content_discription">this will move the number up</string>
+    <string name="reset_button_discription">this button will reset the game</string>
+    <string name="the_queston_string">Is your number is %d?</string>
+    <string name="the_answer_string"> your number is %d</string>
+</resources>
